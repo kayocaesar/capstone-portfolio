@@ -1,6 +1,6 @@
 # Sentiment & Macro-Augmented S&P 500 Long-Short Portfolio Allocation Capstone Project
 
-> This repository contains a source code for a capstone project. The work augments technical features with pre-computed news sentiment scores and configurable macroeconomic indicators for a deep learning framework, evaluated on S&P 500 stocks over 2017–2023.
+> This repository contains a source code for a capstone project. The work augments technical features with pre-computed news sentiment scores and configurable macroeconomic indicators for a deep learning portfolio allocation framework, evaluated on S&P 500 stocks over 2017–2023.
 
 ---
 
