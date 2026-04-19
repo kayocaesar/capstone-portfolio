@@ -321,6 +321,6 @@ Update `TRAIN_END` and `TEST_START` in Section 1. The split must remain within t
 
 The code in this repository is released under the **MIT Licence**.
 
-The sentiment dataset is licensed under **CC BY-NC-SA 4.0** (non-commercial use only). See the [dataset repository](https://github.com/FelixDrinkall/when_dimensionality_hurts) for full terms.
+The sentiment dataset used for this work is licensed under **CC BY-NC-SA 4.0** (non-commercial use only). See the [dataset repository](https://github.com/FelixDrinkall/when_dimensionality_hurts) for full terms.
 
 Stock price data is retrieved from Yahoo Finance and subject to Yahoo's terms of service.
