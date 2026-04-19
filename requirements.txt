@@ -1,1 +1,36 @@
+# ── Sentiment & Macro-Augmented S&P 500 Long-Short Portfolio ──────────────────
+# Install all dependencies:
+#   pip install -r requirements.txt
+#
+# For GPU support (CUDA 11.8), replace the torch line with:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu118
+# For GPU support (CUDA 12.1):
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+# ─────────────────────────────────────────────────────────────────────────────
 
+# ── Deep learning ─────────────────────────────────────────────────────────────
+torch>=1.13.0                  # MLP, CNN, LSTM, Transformer models
+
+# ── Financial data ────────────────────────────────────────────────────────────
+yfinance>=0.2.0                # Stock price and macro indicator download
+
+# ── Data wrangling ────────────────────────────────────────────────────────────
+pandas>=1.5.0                  # DataFrames, merging, groupby aggregation
+numpy>=1.23.0                  # Array operations, sliding-window construction
+
+# ── Machine learning utilities ────────────────────────────────────────────────
+scikit-learn>=1.0.0            # StandardScaler, train/test split helpers
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.5.0              # Line charts, bar charts, cumulative return plots
+seaborn>=0.12.0                # Heatmaps (metric comparison tables)
+
+# ── Progress & utilities ──────────────────────────────────────────────────────
+tqdm>=4.60.0                   # Progress bars during data loading and training
+
+# ── Standard library (no install needed, listed for reference) ────────────────
+# json      — JSON parsing of sentiment files
+# lzma      — decompression of .xz sentiment files
+# glob      — file discovery (YYYY_processed.json.xz pattern)
+# os        — path handling
+# warnings  — filter non-critical runtime warnings
