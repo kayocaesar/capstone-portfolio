@@ -91,7 +91,7 @@ The notebook is designed to run on Google Colab with data stored in Google Drive
 
 ### Sentiment files
 
-The notebook expects pre-processed yearly JSON files produced by the [`financial-news-dataset`](https://github.com/FelixDrinkall/when_dimensionality_hurts) repository (Drinkall et al., 2025).
+The notebook expects pre-processed yearly JSON files produced by the [`financial-news-dataset`](https://github.com/FelixDrinkall/when_dimensionality_hurts) research repository (Drinkall et al., 2025) and found at ['data'](https://github.com/FelixDrinkall/financial-news-dataset/tree/main/data) (Drinkall et al., 2025).
 
 | Setting | Details |
 |---|---|
@@ -314,21 +314,6 @@ Update `TRAIN_END` and `TEST_START` in Section 1. The split must remain within t
 
 ---
 
-## Citation
-
-If you use this code or build on it, please cite the original paper and dataset:
-
-```bibtex
-
-@misc{drinkall2025financial,
-  title        = {When Dimensionality Hurts: The Role of LLM Embedding
-                  Compression for Noisy Regression Tasks},
-  author       = {Felix Drinkall and Janet B. Pierrehumbert and Stefan Zohren},
-  year         = {2025},
-  archivePrefix= {arXiv},
-  primaryClass = {cs.CL}
-}
-```
 
 ---
 
