@@ -49,7 +49,7 @@ Four deep learning architectures (MLP, CNN, LSTM, Transformer) are trained on fo
 .
 ├── main.ipynb   # Main notebook
 ├── data/
-│   └── YYYY_processed.json.xz        # Sentiment input files (one per year)
+│   └── YYYY_processed.json.xz        # Sentiment input files (one per year) [excluded here, but follow the link if you are replicating the work]
 ├── requirements.txt                  # requirements
 └── README.md                         # This file
 ```
