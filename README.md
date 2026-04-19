@@ -1,6 +1,6 @@
 # Sentiment & Macro-Augmented S&P 500 Long-Short Portfolio Allocation Capstone Project
 
-> This repository contains a source code for a capstone project. The work modifies a deep learning portfolio framework from Guo (2024) by augmenting technical features with pre-computed news sentiment scores and configurable macroeconomic indicators, evaluated on S&P 500 stocks over 2017–2023.
+> This repository contains a source code for a capstone project. The work augments technical features with pre-computed news sentiment scores and configurable macroeconomic indicators for a deep learning framework, evaluated on S&P 500 stocks over 2017–2023.
 
 ---
 
@@ -24,7 +24,7 @@
 
 ## Overview
 
-This project adapts the empirical study *"Deep Learning in Long-Short Stock Portfolio Allocation"* (Guo, 2024) by layering two additional information sources on top of the original technical features:
+In this project, a deep learning portfolio allocation framework, based on historical trading data, is developed by layering two additional information sources on top of the original technical features:
 
 - **Sentiment features** — daily per-ticker sentiment scores aggregated from the Yahoo Finance financial news dataset (Drinkall et al., 2025), covering 2017–2023.
 - **Macroeconomic features** — configurable market-wide indicators (S&P 500 index, VIX, 10-year Treasury yield, US Dollar Index) downloaded automatically at runtime.
@@ -47,11 +47,11 @@ Four deep learning architectures (MLP, CNN, LSTM, Transformer) are trained on fo
 
 ```
 .
-├── sentiment_portfolio_sp500.ipynb   # Main notebook
+├── main.ipynb   # Main notebook
 ├── data/
 │   └── YYYY_processed.json.xz        # Sentiment input files (one per year)
-├── workflow.jpg                       # Pipeline schematic
-└── README.md                          # This file
+├── requirements.txt                  # requirements
+└── README.md                         # This file
 ```
 
 The notebook is self-contained. All outputs (figures, tables, summary statistics) are generated inline when cells are run top to bottom.
@@ -214,7 +214,7 @@ Gradient clipping (max norm 1.0) is applied at every training step. The `Standar
 
 ## Portfolio Strategy
 
-The strategy follows Guo (2024) Section 3.2.
+The strategy :
 
 - At the end of each trading day, each model predicts the next-day return for every ticker.
 - Tickers with a **positive** predicted return enter the **long** leg; **negative** predictions go **short**.
@@ -240,7 +240,7 @@ $$R_{t+1} = \sum_{i \in \text{long}} w_i r_i - \sum_{i \in \text{short}} w_i r_i
 ### Quick start
 
 1. Upload your `YYYY_processed.json.xz` files to Google Drive (or a local folder).
-2. Open `sentiment_portfolio_sp500.ipynb` in Google Colab or JupyterLab.
+2. Open `main.ipynb` in Google Colab or JupyterLab.
 3. In **Section 1**, update `SENTIMENT_DATA_DIR` to point to your data folder.
 4. Optionally adjust `SP500_TICKERS`, `MACRO_SERIES`, and any hyperparameters.
 5. Run all cells: **Runtime → Run all**.
@@ -319,12 +319,6 @@ Update `TRAIN_END` and `TEST_START` in Section 1. The split must remain within t
 If you use this code or build on it, please cite the original paper and dataset:
 
 ```bibtex
-@article{guo2024longshort,
-  title   = {Deep Learning in Long-Short Stock Portfolio Allocation: An Empirical Study},
-  author  = {Junjie Guo},
-  journal = {arXiv:2411.13555},
-  year    = {2024}
-}
 
 @misc{drinkall2025financial,
   title        = {When Dimensionality Hurts: The Role of LLM Embedding
