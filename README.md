@@ -239,11 +239,12 @@ $$R_{t+1} = \sum_{i \in \text{long}} w_i r_i - \sum_{i \in \text{short}} w_i r_i
 
 ### Quick start
 
-1. Upload your `YYYY_processed.json.xz` files to Google Drive (or a local folder).
-2. Open `main.ipynb` in Google Colab or JupyterLab.
-3. In **Section 1**, update `SENTIMENT_DATA_DIR` to point to your data folder.
-4. Optionally adjust `SP500_TICKERS`, `MACRO_SERIES`, and any hyperparameters.
-5. Run all cells: **Runtime → Run all**.
+1. Download your pre-processed sentiment data data from ['data'](https://github.com/FelixDrinkall/financial-news-dataset/tree/main/data)
+2. Upload your `YYYY_processed.json.xz` files to Google Drive (or a local folder).
+3. Open `main.ipynb` in Google Colab or JupyterLab.
+4. In **Section 1**, update `SENTIMENT_DATA_DIR` to point to your data folder.
+5. Optionally adjust `SP500_TICKERS`, `MACRO_SERIES`, and any hyperparameters.
+6. Run all cells: **Runtime → Run all**.
 
 ### Expected runtime
 
